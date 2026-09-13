@@ -26,7 +26,7 @@ jobs:
       - name: Prepare deploy folder
         run: |
           mkdir -p dist
-          for item in index.html CNAME sitemap.xml favicon.png enviz-l-logo.png; do
+          for item in index.html CNAME sitemap.xml favicon.png enviz-l-logo.png manifest.json sw.js; do
             if [ -e "$item" ]; then
               cp -r "$item" dist/
             fi
