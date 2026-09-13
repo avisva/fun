@@ -3,7 +3,8 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Laugh Hub - Fun Menu</title>
+  <title>Fun Hub</title>
+  <link rel="icon" type="image/png" href="favicon.png">
   <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&family=Poppins:wght@400;600&display=swap" rel="stylesheet">
   <style>
     body {
@@ -118,6 +119,49 @@
     .emoji { font-size: 1.2em; margin-right: 8px; }
     .character { font-weight: bold; color: #ff5722; margin-right: 6px; }
     .line { color: #333; }
+
+    .answer-toggle {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      margin: 10px 0 8px;
+      border: none;
+      border-radius: 999px;
+      padding: 8px 14px;
+      background: linear-gradient(135deg, #ff9800, #ff5722);
+      color: white;
+      font-weight: 700;
+      font-size: 0.8em;
+      cursor: pointer;
+      box-shadow: 0 4px 10px rgba(255, 87, 34, 0.25);
+      transition: transform 0.2s ease, box-shadow 0.2s ease;
+    }
+    .answer-toggle:hover {
+      transform: translateY(-2px) scale(1.02);
+      box-shadow: 0 6px 15px rgba(255, 87, 34, 0.32);
+    }
+    .answer-toggle:active {
+      transform: translateY(0);
+    }
+    .sparkle {
+      font-size: 1.1em;
+    }
+    .answer {
+      display: none;
+      margin-top: 8px;
+      animation: popIn 0.25s ease;
+    }
+    .answer[hidden] {
+      display: none !important;
+    }
+    .answer:not([hidden]) {
+      display: block;
+    }
+    @keyframes popIn {
+      from { opacity: 0; transform: scale(0.96); }
+      to { opacity: 1; transform: scale(1); }
+    }
 
     footer {
       background: #ff5722;
@@ -768,6 +812,312 @@
       <div><span class="character">Puzzle:</span> <span class="line">What has keys but can’t open locks?</span></div>
       <div><span class="character">Answer:</span> <span class="line">A piano!</span></div>
     </div>
+
+    <div class="joke">
+      <span class="emoji">🧩</span>
+      <div><span class="character">Puzzle:</span> <span class="line">I speak without a mouth and hear without ears. I have no body, but I come alive with the answer.</span></div>
+      <div><span class="character">Answer:</span> <span class="line">An echo!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🧩</span>
+      <div><span class="character">Puzzle:</span> <span class="line">The more you take, the more you leave behind. What are they?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">Footsteps!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🧩</span>
+      <div><span class="character">Puzzle:</span> <span class="line">What gets wetter as it dries?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">A towel!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🧩</span>
+      <div><span class="character">Puzzle:</span> <span class="line">What can travel around the world while staying in the same corner?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">A stamp!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🧩</span>
+      <div><span class="character">Puzzle:</span> <span class="line">What has a face and two hands but no arms or legs?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">A clock!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🧩</span>
+      <div><span class="character">Puzzle:</span> <span class="line">What comes once in a minute, twice in a moment, but never in a thousand years?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">The letter M!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🧩</span>
+      <div><span class="character">Puzzle:</span> <span class="line">Why is 6 afraid of 7?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">Because 7 8 9!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🧩</span>
+      <div><span class="character">Puzzle:</span> <span class="line">Which word becomes shorter when you add two letters to it?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">Short!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🧩</span>
+      <div><span class="character">Puzzle:</span> <span class="line">What has one eye but can’t see?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">A needle!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🧩</span>
+      <div><span class="character">Puzzle:</span> <span class="line">What begins with T, ends with T, and has T in it?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">A teapot!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🧩</span>
+      <div><span class="character">Puzzle:</span> <span class="line">How many months have 28 days?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">All of them!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🧩</span>
+      <div><span class="character">Puzzle:</span> <span class="line">What can you catch but not throw?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">A cold!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🧩</span>
+      <div><span class="character">Puzzle:</span> <span class="line">What has a neck but no head, two arms but no hands?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">A shirt!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🧩</span>
+      <div><span class="character">Puzzle:</span> <span class="line">What has hands but can’t clap?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">A clock!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🧩</span>
+      <div><span class="character">Puzzle:</span> <span class="line">What gets bigger the more you take away?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">A hole!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🧩</span>
+      <div><span class="character">Puzzle:</span> <span class="line">If you have me, you want to share me. If you share me, you don’t have me. What am I?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">A secret!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🧩</span>
+      <div><span class="character">Puzzle:</span> <span class="line">I am tall when young and short when old. What am I?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">A candle!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🧩</span>
+      <div><span class="character">Puzzle:</span> <span class="line">What can fill a room but takes no space?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">Light!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🧩</span>
+      <div><span class="character">Puzzle:</span> <span class="line">The more there is of me, the less you see. What am I?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">Darkness!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🧩</span>
+      <div><span class="character">Puzzle:</span> <span class="line">What goes up but never comes down?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">Your age!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🧩</span>
+      <div><span class="character">Puzzle:</span> <span class="line">What must be broken before you can use it?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">An egg!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🧩</span>
+      <div><span class="character">Puzzle:</span> <span class="line">I can be cracked, made, told, and played. What am I?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">A joke!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🧩</span>
+      <div><span class="character">Puzzle:</span> <span class="line">What is 7 + 8?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">15!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🧩</span>
+      <div><span class="character">Puzzle:</span> <span class="line">If double a number is 20, what is the number?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">10!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🧩</span>
+      <div><span class="character">Puzzle:</span> <span class="line">What number is 3 less than 15?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">12!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🧩</span>
+      <div><span class="character">Puzzle:</span> <span class="line">Complete the pattern: 9, 18, 27, __</span></div>
+      <div><span class="character">Answer:</span> <span class="line">36!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🧩</span>
+      <div><span class="character">Puzzle:</span> <span class="line">How many sides does a triangle have?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">3!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🧩</span>
+      <div><span class="character">Puzzle:</span> <span class="line">Sam has 3 apples, gets 2 more, and gives 1 away. How many are left?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">4!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🧩</span>
+      <div><span class="character">Puzzle:</span> <span class="line">A book costs 25 and a pen costs 10. What is the total?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">35!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🧩</span>
+      <div><span class="character">Puzzle:</span> <span class="line">What is half of 18?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">9!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🧩</span>
+      <div><span class="character">Puzzle:</span> <span class="line">A train has 6 cars and gets 5 more. How many cars now?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">11!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🧩</span>
+      <div><span class="character">Puzzle:</span> <span class="line">How many right angles are in a square?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">4!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🧩</span>
+      <div><span class="character">Puzzle:</span> <span class="line">If 5 × 4 = 20, what is 4 × 5?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">20!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🧩</span>
+      <div><span class="character">Puzzle:</span> <span class="line">There are 12 eggs and 4 break. How many are left?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">8!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🧩</span>
+      <div><span class="character">Puzzle:</span> <span class="line">What is 3 × 3?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">9!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🧩</span>
+      <div><span class="character">Puzzle:</span> <span class="line">What number is 10 more than 27?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">37!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🧩</span>
+      <div><span class="character">Puzzle:</span> <span class="line">If a clock reads 3:15, which hand is on 3?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">The hour hand!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🧩</span>
+      <div><span class="character">Puzzle:</span> <span class="line">What is 20 ÷ 5?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">4!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🧩</span>
+      <div><span class="character">Puzzle:</span> <span class="line">What shape has 3 sides?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">A triangle!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🧩</span>
+      <div><span class="character">Puzzle:</span> <span class="line">What is the next number: 2, 4, 8, 16, __?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">32!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🧩</span>
+      <div><span class="character">Puzzle:</span> <span class="line">A toy costs 50 and you pay 70. How much change do you get?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">20!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🧩</span>
+      <div><span class="character">Puzzle:</span> <span class="line">What has many keys but can’t open any door?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">A keyboard!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🧩</span>
+      <div><span class="character">Puzzle:</span> <span class="line">What can run but never walks?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">A river!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🧩</span>
+      <div><span class="character">Puzzle:</span> <span class="line">What has a face and two hands but no arms or legs?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">A clock!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🧩</span>
+      <div><span class="character">Puzzle:</span> <span class="line">What is black when it is clean and white when it is dirty?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">A chalkboard!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🧩</span>
+      <div><span class="character">Puzzle:</span> <span class="line">What can you hold without ever touching it?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">A conversation!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🧩</span>
+      <div><span class="character">Puzzle:</span> <span class="line">What has roots but no leaves, branches but no fruit?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">A family tree!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🧩</span>
+      <div><span class="character">Puzzle:</span> <span class="line">What is full of holes but still holds water?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">A sponge!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🧩</span>
+      <div><span class="character">Puzzle:</span> <span class="line">What has cities but no houses, forests but no trees, and water but no fish?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">A map!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🧩</span>
+      <div><span class="character">Puzzle:</span> <span class="line">What starts with an E, ends with an E, and has only one letter in it?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">An envelope!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🧩</span>
+      <div><span class="character">Puzzle:</span> <span class="line">What can break your heart without touching it?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">A promise!</span></div>
+    </div>
   </section>
 
   <section id="giggles">
@@ -775,6 +1125,306 @@
       <span class="emoji">😜</span>
       <div><span class="character">Giggle:</span> <span class="line">Why don’t scientists trust stairs?</span></div>
       <div><span class="character">Answer:</span> <span class="line">Because they’re always up to something!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">😄</span>
+      <div><span class="character">Giggle:</span> <span class="line">Why did the scarecrow win an award?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">Because he was outstanding in his field!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">😂</span>
+      <div><span class="character">Giggle:</span> <span class="line">Why do bees have sticky hair?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">Because they use honeycombs!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">😆</span>
+      <div><span class="character">Giggle:</span> <span class="line">What do you call a sleeping bull?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">A bulldozer!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">😜</span>
+      <div><span class="character">Giggle:</span> <span class="line">Why was the math book sad?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">Because it had too many problems!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">😂</span>
+      <div><span class="character">Giggle:</span> <span class="line">Why did the banana go to the doctor?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">Because it wasn’t peeling well!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">😄</span>
+      <div><span class="character">Giggle:</span> <span class="line">Why did the tomato blush?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">Because it saw the salad dressing!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">😆</span>
+      <div><span class="character">Giggle:</span> <span class="line">Why did the broom get promoted?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">Because it swept everyone off their feet!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🤣</span>
+      <div><span class="character">Giggle:</span> <span class="line">Why did the student eat his homework?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">Because his teacher said it was a piece of cake!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">😜</span>
+      <div><span class="character">Giggle:</span> <span class="line">What do you call a funny mountain?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">Hill-arious!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">😂</span>
+      <div><span class="character">Giggle:</span> <span class="line">Why did the pencil bring a ruler?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">Because it wanted to measure up!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">😄</span>
+      <div><span class="character">Giggle:</span> <span class="line">Why was the computer cold?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">Because it left its Windows open!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">😆</span>
+      <div><span class="character">Giggle:</span> <span class="line">What do you call cheese that isn’t yours?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">Nacho cheese!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🤣</span>
+      <div><span class="character">Giggle:</span> <span class="line">Why did the duck get a job?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">Because it was really quacking good at it!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">😄</span>
+      <div><span class="character">Giggle:</span> <span class="line">Why did the cookie go to the hospital?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">Because it felt crummy!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">😆</span>
+      <div><span class="character">Giggle:</span> <span class="line">Why was the belt arrested?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">Because it was holding up a pair of pants!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">😂</span>
+      <div><span class="character">Giggle:</span> <span class="line">Why did the cloud get a job?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">Because it wanted to make a little rain!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">😜</span>
+      <div><span class="character">Giggle:</span> <span class="line">What do you call a dinosaur with a great vocabulary?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">A thesaurus!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">😄</span>
+      <div><span class="character">Giggle:</span> <span class="line">Why was the ruler a good student?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">Because it always stayed in line!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">😂</span>
+      <div><span class="character">Giggle:</span> <span class="line">Why did the frog take the bus?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">Because his car was all croaked!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">😆</span>
+      <div><span class="character">Giggle:</span> <span class="line">What do you call a fish with no eyes?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">Fsh!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🤣</span>
+      <div><span class="character">Giggle:</span> <span class="line">Why did the robot go to school?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">To improve its byte-size knowledge!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">😜</span>
+      <div><span class="character">Giggle:</span> <span class="line">What is a ghost’s favorite dessert?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">Ice scream!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">😂</span>
+      <div><span class="character">Giggle:</span> <span class="line">Why did the tiger join the band?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">Because it had a great roar-chestra!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">😄</span>
+      <div><span class="character">Giggle:</span> <span class="line">Why did the orange stop?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">Because it ran out of juice!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">😆</span>
+      <div><span class="character">Giggle:</span> <span class="line">What do you call a smiling potato?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">A happy spud!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">😂</span>
+      <div><span class="character">Giggle:</span> <span class="line">Why do cows wear bells?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">Because their horns don’t work!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">😜</span>
+      <div><span class="character">Giggle:</span> <span class="line">Why did the jellybean go to school?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">To become a smartie!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">😄</span>
+      <div><span class="character">Giggle:</span> <span class="line">What do you call a bear with no teeth?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">A gummy bear!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">😂</span>
+      <div><span class="character">Giggle:</span> <span class="line">Why did the clock break?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">It worked too hard!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">😆</span>
+      <div><span class="character">Giggle:</span> <span class="line">What do you call a lazy egg?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">A yolk-ward chicken!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🤣</span>
+      <div><span class="character">Giggle:</span> <span class="line">Why did the goat wear glasses?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">To look cool!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">😜</span>
+      <div><span class="character">Giggle:</span> <span class="line">What do you call a vampire that loves math?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">Count Dracula!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">😂</span>
+      <div><span class="character">Giggle:</span> <span class="line">Why did the pencil feel confident?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">Because it had a good point!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">😄</span>
+      <div><span class="character">Giggle:</span> <span class="line">What do you call a chicken crossing the road?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">A poultry crossing!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">😆</span>
+      <div><span class="character">Giggle:</span> <span class="line">Why was the cat so good at chess?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">It had great whisker control!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🤣</span>
+      <div><span class="character">Giggle:</span> <span class="line">What do you call a snowman in summer?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">A puddle!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">😜</span>
+      <div><span class="character">Giggle:</span> <span class="line">Why did the lamp get applause?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">Because it really lit up the room!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">😂</span>
+      <div><span class="character">Giggle:</span> <span class="line">Why did the watermelon smile?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">Because it was feeling sweet!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">😄</span>
+      <div><span class="character">Giggle:</span> <span class="line">Why did the sandwich take a nap?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">Because it was tired of being stacked!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">😆</span>
+      <div><span class="character">Giggle:</span> <span class="line">What do you call a cactus who tells jokes?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">A prickly comedian!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🤣</span>
+      <div><span class="character">Giggle:</span> <span class="line">Why did the dinosaur sit in the shade?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">Because it was feeling a little dino-sore!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">😄</span>
+      <div><span class="character">Giggle:</span> <span class="line">Why did the penguin bring a suitcase?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">Because it was going on a cold trip!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">😆</span>
+      <div><span class="character">Giggle:</span> <span class="line">Why did the fox sit in the shade?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">Because it was trying to stay pawsitively cool!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">😂</span>
+      <div><span class="character">Giggle:</span> <span class="line">Why was the moon such a good student?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">Because it always knew its orbit!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">😜</span>
+      <div><span class="character">Giggle:</span> <span class="line">What do you call a pig that does karate?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">A pork chop!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">😄</span>
+      <div><span class="character">Giggle:</span> <span class="line">Why did the owl become a comedian?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">Because it had a great hoot!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">😂</span>
+      <div><span class="character">Giggle:</span> <span class="line">Why did the snail win the race?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">Because it kept going and never sped away!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">😆</span>
+      <div><span class="character">Giggle:</span> <span class="line">What do you call a chicken that tells jokes?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">A comedihen!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">🤣</span>
+      <div><span class="character">Giggle:</span> <span class="line">Why did the basketball player bring a ladder?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">Because the shots were really high!</span></div>
+    </div>
+
+    <div class="joke">
+      <span class="emoji">😜</span>
+      <div><span class="character">Giggle:</span> <span class="line">What do you call a dinosaur that loves music?</span></div>
+      <div><span class="character">Answer:</span> <span class="line">A dino-saur!</span></div>
     </div>
   </section>
 
@@ -794,6 +1444,34 @@
       document.querySelectorAll("nav a").forEach(link => link.classList.remove("active-link"));
       evt.currentTarget.classList.add("active-link");
     }
+
+    document.querySelectorAll("#puzzles .joke, #giggles .joke").forEach((card) => {
+      const answerDiv = Array.from(card.children).find((node) =>
+        node.tagName === "DIV" && node.textContent.includes("Answer:")
+      );
+
+      if (!answerDiv) return;
+
+      answerDiv.classList.add("answer");
+      answerDiv.hidden = true;
+
+      const toggleButton = document.createElement("button");
+      toggleButton.type = "button";
+      toggleButton.className = "answer-toggle";
+      toggleButton.setAttribute("aria-expanded", "false");
+      toggleButton.innerHTML = '<span class="sparkle">✨</span> Reveal answer';
+
+      toggleButton.addEventListener("click", () => {
+        const isHidden = answerDiv.hidden;
+        answerDiv.hidden = !isHidden;
+        toggleButton.setAttribute("aria-expanded", String(!isHidden));
+        toggleButton.innerHTML = isHidden
+          ? '<span class="sparkle">🎉</span> Hide answer'
+          : '<span class="sparkle">✨</span> Reveal answer';
+      });
+
+      card.insertBefore(toggleButton, answerDiv);
+    });
   </script>
 </body>
 </html>
